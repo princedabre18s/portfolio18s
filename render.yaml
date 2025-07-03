@@ -5,8 +5,3 @@ services:
     buildCommand: npm install --legacy-peer-deps && npm run build
     staticPublishPath: ./build
     pullRequestPreviewsEnabled: true
-    envVars:
-      - key: NODE_VERSION
-        value: "18"
-      - key: NPM_CONFIG_LEGACY_PEER_DEPS
-        value: "true"
