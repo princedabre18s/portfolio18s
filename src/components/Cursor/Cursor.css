@@ -1,0 +1,31 @@
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00d4ff, #ff00ff);
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+  mix-blend-mode: screen;
+  transform: translate(-50%, -50%);
+}
+
+.cursor-follower {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 212, 255, 0.3);
+  pointer-events: none;
+  z-index: 9998;
+  transition: all 0.2s ease;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .cursor,
+  .cursor-follower {
+    display: none;
+  }
+}

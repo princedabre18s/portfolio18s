@@ -1,0 +1,43 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A modern, animated 3D portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "npm run build",
+    "serve": "npx serve -s build"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^10.16.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
+    "react-intersection-observer": "^9.5.2",
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+    "typed.js": "^2.0.16"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
