@@ -27,10 +27,9 @@ const Hero = () => {
     };
   }, []);
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/princedabre', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com/in/princedabre', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com/princedabre', label: 'Twitter' },
-    { icon: FaInstagram, href: 'https://instagram.com/princedabre', label: 'Instagram' }
+    { icon: FaGithub, href: 'https://github.com/princedabre18s', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/princedabre18s', label: 'LinkedIn' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/princedabre18s', label: 'Instagram' }
   ];
 
   return (

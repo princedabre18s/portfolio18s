@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaHeart, FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaArrowUp } from 'react-icons/fa';
+import { FaHeart, FaGithub, FaLinkedin,  FaInstagram, FaArrowUp } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -14,10 +14,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: FaGithub, href: 'https://github.com/prince-dabre', label: 'GitHub' },
-    { icon: FaLinkedin, href: 'https://linkedin.com/in/prince-dabre', label: 'LinkedIn' },
-    { icon: FaTwitter, href: 'https://twitter.com/prince_dabre', label: 'Twitter' },
-    { icon: FaInstagram, href: 'https://instagram.com/prince_dabre', label: 'Instagram' }
+    { icon: FaGithub, href: 'https://github.com/princedabre18s', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/princedabre18s', label: 'LinkedIn' },
+    { icon: FaInstagram, href: 'https://www.instagram.com/princedabre18s', label: 'Instagram' }
   ];
 
   const quickLinks = [
@@ -124,25 +123,22 @@ const Footer = () => {
                 <p className="contact-item">
                   <span className="contact-label">Email:</span>
                   <a 
-                    href="mailto:prince.dabre@email.com" 
+                    href="mailto:princedabre18s@gmail.com" 
                     className="contact-value"
                   >
-                    prince.dabre@email.com
+                    princedabre18s@gmail.com
                   </a>
                 </p>
                 <p className="contact-item">
                   <span className="contact-label">Phone:</span>
                   <a 
-                    href="tel:+919876543210" 
+                    href="tel:+918080685913" 
                     className="contact-value"
                   >
-                    +91 98765 43210
+                    +91 80806 85913
                   </a>
                 </p>
-                <p className="contact-item">
-                  <span className="contact-label">Location:</span>
-                  <span className="contact-value">Mumbai, India</span>
-                </p>
+                
               </div>
             </motion.div>
           </div>
@@ -156,22 +152,7 @@ const Footer = () => {
           >
             <div className="footer-copyright">
               <p>
-                © {currentYear} Prince Dabre. Made with{' '}
-                <motion.span
-                  className="heart"
-                  animate={{
-                    scale: [1, 1.2, 1],
-                    color: ['#ff00ff', '#ff4444', '#ff00ff']
-                  }}
-                  transition={{
-                    duration: 2,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                >
-                  <FaHeart />
-                </motion.span>{' '}
-                and lots of ☕
+                © {currentYear} Prince Dabre.  
               </p>
             </div>
 

@@ -1,7 +1,7 @@
 .experience {
   background: linear-gradient(135deg, #533a7d 0%, #1a1a2e 50%, #0a0a0a 100%);
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .experience::before {
@@ -22,7 +22,7 @@
 
 .timeline {
   position: relative;
-  max-width: 1000px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -42,16 +42,17 @@
   position: relative;
   margin-bottom: 4rem;
   width: 50%;
+  overflow: visible;
 }
 
 .timeline-item.left {
   left: 0;
-  padding-right: 3rem;
+  padding-right: 2.5rem;
 }
 
 .timeline-item.right {
   left: 50%;
-  padding-left: 3rem;
+  padding-left: 2rem;
 }
 
 .timeline-content {
@@ -62,6 +63,7 @@
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
+  overflow: visible;
 }
 
 .timeline-content::before {
@@ -95,6 +97,15 @@
   justify-content: center;
   border: 4px solid #0a0a0a;
   z-index: 3;
+  overflow: visible;
+  box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.timeline-marker:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+  z-index: 100;
 }
 
 .timeline-item.left .timeline-marker {
@@ -108,6 +119,66 @@
 .marker-icon {
   color: #fff;
   font-size: 1.2rem;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.company-logo:hover {
+  transform: scale(2.8) translateY(-10px);
+  object-fit: contain;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(15px);
+  border: 3px solid rgba(0, 212, 255, 0.6);
+  box-shadow: 0 15px 35px rgba(0, 212, 255, 0.4), 
+              0 0 25px rgba(255, 255, 255, 0.3),
+              0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 10px;
+}
+
+/* Add a subtle pulse animation on hover */
+.company-logo:hover {
+  animation: logoHoverPulse 0.6s ease-in-out;
+}
+
+@keyframes logoHoverPulse {
+  0% { 
+    transform: scale(1) translateY(0); 
+    box-shadow: 0 4px 12px rgba(0, 212, 255, 0.3);
+  }
+  50% { 
+    transform: scale(3.2) translateY(-15px); 
+    box-shadow: 0 20px 40px rgba(0, 212, 255, 0.5);
+  }
+  100% { 
+    transform: scale(2.8) translateY(-10px); 
+    box-shadow: 0 15px 35px rgba(0, 212, 255, 0.4);
+  }
+}
+
+/* Specific styling for different logo shapes */
+.timeline-marker .marker-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: visible;
+  position: relative;
 }
 
 .experience-header {
@@ -171,6 +242,31 @@
   font-size: 1rem;
 }
 
+.job-description-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.job-description-item {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  text-align: justify;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.job-description-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #00d4ff;
+  font-size: 1.2rem;
+  top: 0;
+}
+
 .technologies {
   margin-bottom: 1.5rem;
 }
@@ -213,20 +309,21 @@
 
 .achievement-item {
   color: rgba(255, 255, 255, 0.8);
-  padding: 0.3rem 0;
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  text-align: justify;
   position: relative;
   padding-left: 1.5rem;
-  line-height: 1.5;
-  font-size: 0.9rem;
 }
 
 .achievement-item::before {
-  content: '▶';
+  content: '•';
   position: absolute;
   left: 0;
   color: #00ff88;
-  font-size: 0.7rem;
-  top: 0.4rem;
+  font-size: 1.2rem;
+  top: 0;
 }
 
 /* Hover effects */
@@ -320,4 +417,49 @@
     padding: 0.2rem 0.6rem;
     font-size: 0.7rem;
   }
+}
+
+
+/* Center alignment for the first and second timeline item header and meta only */
+.timeline-item:first-child .experience-header.centered-header,
+.timeline-item:nth-child(2) .experience-header.centered-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.timeline-item:first-child .experience-header.centered-header .job-info,
+.timeline-item:nth-child(2) .experience-header.centered-header .job-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-item:first-child .experience-header.centered-header .job-type,
+.timeline-item:nth-child(2) .experience-header.centered-header .job-type {
+  margin-top: 0.5rem;
+}
+
+.timeline-item:first-child .experience-meta.centered-meta,
+.timeline-item:nth-child(2) .experience-meta.centered-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+/* Center alignment for technologies section in first and second blocks */
+.timeline-item:first-child .technologies,
+.timeline-item:nth-child(2) .technologies {
+  text-align: center;
+}
+
+.timeline-item:first-child .tech-tags,
+.timeline-item:nth-child(2) .tech-tags {
+  justify-content: center;
 }

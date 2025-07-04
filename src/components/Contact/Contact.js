@@ -8,7 +8,6 @@ import {
   FaMapMarkerAlt, 
   FaGithub, 
   FaLinkedin, 
-  FaTwitter,
   FaInstagram,
   FaPaperPlane,
   FaCheckCircle
@@ -91,14 +90,14 @@ const Contact = () => {
     {
       icon: FaEnvelope,
       title: 'Email',
-      value: 'prince.dabre.dev@gmail.com',
-      link: 'mailto:prince.dabre.dev@gmail.com'
+      value: 'princedabre18s@gmail.com',
+      link: 'mailto:princedabre18s@gmail.com'
     },
     {
       icon: FaPhone,
       title: 'Phone',
-      value: '+91 98765 43210',
-      link: 'tel:+919876543210'
+      value: '+91 8080685913',
+      link: 'tel:+918080685913'
     },
     {
       icon: FaMapMarkerAlt,
@@ -112,25 +111,19 @@ const Contact = () => {
     {
       icon: FaGithub,
       name: 'GitHub',
-      url: 'https://github.com/princedabre',
+      url: 'https://github.com/princedabre18s',
       color: '#333'
     },
     {
       icon: FaLinkedin,
       name: 'LinkedIn',
-      url: 'https://linkedin.com/in/princedabre',
+      url: 'https://www.linkedin.com/in/princedabre18s',
       color: '#0077B5'
-    },
-    {
-      icon: FaTwitter,
-      name: 'Twitter',
-      url: 'https://twitter.com/princedabre',
-      color: '#1DA1F2'
     },
     {
       icon: FaInstagram,
       name: 'Instagram',
-      url: 'https://instagram.com/princedabre',
+      url: 'https://www.instagram.com/princedabre18s',
       color: '#E4405F'
     }
   ];

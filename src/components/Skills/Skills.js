@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaServer, FaLinux } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { 
   FaReact, 
@@ -15,9 +16,8 @@ import {
   SiDjango, 
   SiMongodb, 
   SiPostgresql, 
-  SiTailwindcss,
-  SiRedux,
-  SiDocker
+  SiDocker,
+  SiPostman
 } from 'react-icons/si';
 import './Skills.css';
 
@@ -54,8 +54,8 @@ const Skills = () => {
         { name: 'JavaScript', icon: FaJs, level: 90, color: '#F7DF1E' },
         { name: 'HTML5', icon: FaHtml5, level: 95, color: '#E34F26' },
         { name: 'CSS3', icon: FaCss3Alt, level: 90, color: '#1572B6' },
-        { name: 'Tailwind', icon: SiTailwindcss, level: 85, color: '#06B6D4' },
-        { name: 'Redux', icon: SiRedux, level: 80, color: '#764ABC' }
+        { name: 'Bootstrap', icon: FaCss3Alt, level: 85, color: '#7952B3' },
+        { name: 'Responsive Design', icon: FaCss3Alt, level: 90, color: '#00d4ff' }
       ]
     },
     {
@@ -72,14 +72,25 @@ const Skills = () => {
       skills: [
         { name: 'MongoDB', icon: SiMongodb, level: 85, color: '#47A248' },
         { name: 'PostgreSQL', icon: SiPostgresql, level: 90, color: '#336791' },
+        { name: 'MySQL', icon: FaDatabase, level: 80, color: '#00758F' },
         { name: 'Database Design', icon: FaDatabase, level: 85, color: '#ff00ff' }
+      ]
+    },
+    {
+      title: 'Operating Systems',
+      skills: [
+        { name: 'Kali Linux', icon: FaLinux, level: 80, color: '#557C94' }
       ]
     },
     {
       title: 'Tools & Others',
       skills: [
         { name: 'Git', icon: FaGitAlt, level: 90, color: '#F05032' },
-        { name: 'Docker', icon: SiDocker, level: 70, color: '#2496ED' }
+        { name: 'Docker', icon: SiDocker, level: 70, color: '#2496ED' },
+        { name: 'Postman', icon: SiPostman, level: 90, color: '#FFA500' },
+        { name: 'XAMPP', icon: FaServer, level: 90, color: '#FF4500' },
+        { name: 'GitHub Actions', icon: FaGitAlt, level: 75, color: '#24292e' },
+        { name: 'VS Code', icon: FaServer, level: 95, color: '#007ACC' }
       ]
     }
   ];

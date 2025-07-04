@@ -41,7 +41,7 @@ const Projects = () => {
       image: '/api/placeholder/600/400',
       technologies: ['React', 'Django', 'PostgreSQL', 'Bootstrap', 'Stripe API'],
       category: 'fullstack',
-      github: 'https://github.com/princedabre/ecommerce-store',
+      github: 'https://github.com/princedabre18s/ecommerce-store',
       live: 'https://ecommerce-demo.com',
       features: [
         'Responsive Product Catalog',
@@ -62,7 +62,7 @@ const Projects = () => {
       image: '/api/placeholder/600/400',
       technologies: ['React', 'CSS3', 'Framer Motion', 'JavaScript', 'Responsive Design'],
       category: 'frontend',
-      github: 'https://github.com/princedabre/portfolio',
+      github: 'https://github.com/princedabre18s/portfolio18s',
       live: 'https://princedabre.dev',
       features: [
         'Animated Transitions',
@@ -83,7 +83,7 @@ const Projects = () => {
       image: '/api/placeholder/600/400',
       technologies: ['React', 'Django', 'MongoDB', 'Socket.io', 'Material-UI'],
       category: 'fullstack',
-      github: 'https://github.com/princedabre/task-manager',
+      github: 'https://github.com/princedabre18s/task-manager',
       live: 'https://taskmanager-demo.com',
       features: [
         'Task Creation & Management',
@@ -125,7 +125,7 @@ const Projects = () => {
       image: '/api/placeholder/600/400',
       technologies: ['Django', 'PostgreSQL', 'Redis', 'Elasticsearch'],
       category: 'backend',
-      github: 'https://github.com/prince-dabre/blog-cms',
+      github: 'https://github.com/princedabre18s/blog-cms',
       live: 'https://blog-cms-demo.princedabre.com',
       features: [
         'Rich Text Editor',
@@ -146,7 +146,7 @@ const Projects = () => {
       image: '/api/placeholder/600/400',
       technologies: ['Django', 'Redis', 'PostgreSQL', 'Docker'],
       category: 'backend',
-      github: 'https://github.com/prince-dabre/api-gateway',
+      github: 'https://github.com/princedabre18s/api-gateway',
       live: 'https://api-gateway-demo.princedabre.com',
       features: [
         'API Authentication',
