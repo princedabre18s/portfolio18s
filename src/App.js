@@ -41,6 +41,18 @@ function App() {
       <div className="App">
         <Cursor />
         <ParticlesBackground />
+        
+        {/* ===== PORTFOLIO IN PROGRESS BANNER - START ===== */}
+        {/* To remove this banner, delete everything between these comment blocks */}
+        <div className="progress-banner">
+          <div className="progress-banner-content">
+            <span className="progress-banner-icon">🚧</span>
+            <span className="progress-banner-text">Portfolio in Progress</span>
+            <span className="progress-banner-icon">🚧</span>
+          </div>
+        </div>
+        {/* ===== PORTFOLIO IN PROGRESS BANNER - END ===== */}
+        
         <Navbar />
         <main>
           <Hero />

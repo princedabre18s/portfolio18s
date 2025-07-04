@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  top: 0;
+  top: 40px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -119,10 +119,10 @@
 
   .nav-menu {
     position: fixed;
-    top: 0;
+    top: 35px;
     right: -100%;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 35px);
     background: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(20px);
     flex-direction: column;

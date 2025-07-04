@@ -128,6 +128,75 @@ html {
   50% { border-color: #00d4ff; }
 }
 
+/* ===== PORTFOLIO IN PROGRESS BANNER STYLES - START ===== */
+/* To remove this banner, delete this entire CSS block as well */
+.progress-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: linear-gradient(135deg, #ff6b35, #f7931e, #ff6b35);
+  background-size: 200% 200%;
+  animation: bannerGradient 3s ease infinite;
+  padding: 8px 0;
+  box-shadow: 0 2px 10px rgba(255, 107, 53, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.progress-banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 14px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.progress-banner-icon {
+  font-size: 16px;
+  animation: bannerPulse 2s ease-in-out infinite;
+}
+
+.progress-banner-text {
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+@keyframes bannerGradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes bannerPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Adjust body margin to account for fixed banner */
+body {
+  margin-top: 120px; /* Banner (40px) + Navbar space (80px) */
+}
+
+/* Mobile responsiveness for banner */
+@media (max-width: 768px) {
+  .progress-banner-content {
+    font-size: 12px;
+  }
+  
+  .progress-banner-icon {
+    font-size: 14px;
+  }
+  
+  body {
+    margin-top: 110px; /* Banner (35px) + Navbar space (75px) */
+  }
+}
+/* ===== PORTFOLIO IN PROGRESS BANNER STYLES - END ===== */
+
 /* Responsive utilities */
 @media (max-width: 1200px) {
   .container {
